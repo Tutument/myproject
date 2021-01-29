@@ -7,6 +7,6 @@
 		select pic_compress FROM t_seal_info_pic p LEFT JOIN t_seal_info_new n on p.seal_code  = n.seal_code WHERE  uid= #{uid}
 	</select>
 	<select id="findPicBySealCode" parameterType="java.lang.String" resultType="com.example.myproject.pojo.SealInfoPic">
-		select id , seal_code ,pic_compress from t_seal_info_pic where seal_code = #{seal_code}
+		select id , seal_code ,pic_compress from t_seal_info_pic where seal_code = #{sealCode}
 	</select>
 </mapper>
